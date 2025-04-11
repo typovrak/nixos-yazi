@@ -22,6 +22,10 @@ in {
 		cp ${./theme.toml} ${home}/.config/yazi/theme.toml
 		chown ${username}:${group} ${home}/.config/yazi/theme.toml
 		chmod 600 ${home}/.config/yazi/theme.toml
+
+		cp ${./Catppuccin-mocha.tmTheme} ${home}/.config/yazi/Catppuccin-mocha.tmTheme
+		chown ${username}:${group} ${home}/.config/yazi/Catppuccin-mocha.tmTheme
+		chmod 600 ${home}/.config/yazi/Catppuccin-mocha.tmTheme
 	'';
 
 	environment.systemPackages = with pkgs; [
